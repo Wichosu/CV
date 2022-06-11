@@ -115,9 +115,9 @@
             (0,-\anglesize) --
             (\anglesize,0) --
             (\paperwidth,0) --
-            (\paperwidth,-\topheight-2\margin) --
-            (\sidewidth+2\margin+\anglesize,-\topheight-2\margin) --
-            (\sidewidth+2\margin,-\topheight-2\margin-\anglesize) --
+            (\paperwidth,-\topheight-5\margin) --
+            (\sidewidth+2\margin+\anglesize,-\topheight-5\margin) --
+            (\sidewidth+2\margin,-\topheight-5\margin-\anglesize) --
             (\sidewidth+2\margin,-\paperheight) --
             cycle;
         \draw [draw=#1, shift={(current page.north west)}, very thick]
@@ -149,7 +149,7 @@
 
 
 \newenvironment{MainPart}{
-    \begin{textblock*}{\mainwidth}(\sidewidth+3\margin,\topheight + 3\margin-0.4cm)
+    \begin{textblock*}{\mainwidth}(\sidewidth+3\margin,\topheight + 6\margin-0.4cm)
     \begin{center}
 }{
     \end{center}
